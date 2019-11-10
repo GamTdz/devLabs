@@ -13,7 +13,7 @@ install:
 test:
 	@echo "Start tests."
 	@touch results.txt
-	@pipenv run pytest tests.py | tee results.txt
+	@pipenv run pytest tests/tests.py | tee results.txt
 
 run:
 	@echo "Run Python app."
