@@ -22,3 +22,4 @@ Date:   Sun Nov 10 19:06:55 2019 +0200
 
     Lab 1: first commit
 ```
+3. За допомогою команди `git checkout -b second_bransch` створив нову гілку і переключився на неї.
