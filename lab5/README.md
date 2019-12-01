@@ -38,7 +38,7 @@ docker-compose push
 ```
 20. Для лабораторної роботи №4 створив свій docker-compose.yaml.
 21. Створив два імеджі для Django сайту та моніторингу, та успішно їх запустив.
-22. ![ComposeDjangoConsole](https://github.com/GamTdz/devLabs/blob/master/lab5/img/ComposeDjangoConsole.png "ComposeDjangoConsole")
-23. ![ComposeAppWork](https://github.com/GamTdz/devLabs/blob/master/lab5/img/ComposeAppWork.png "ComposeAppWork")
-24. ![ComposeHealth](https://github.com/GamTdz/devLabs/blob/master/lab5/img/ComposeHealth.png "ComposeHealth")
+22. ![ComposeDjangoConsole](https://github.com/GamTdz/devLabs/blob/master/lab5/img/composeDjangoConsole.png "ComposeDjangoConsole")
+23. ![ComposeAppWork](https://github.com/GamTdz/devLabs/blob/master/lab5/img/composeAppWork.png "ComposeAppWork")
+24. ![ComposeHealth](https://github.com/GamTdz/devLabs/blob/master/lab5/img/composeHealth.png "ComposeHealth")
 25. Завантажив імеджі на [Docker Hub](https://hub.docker.com/repository/docker/gamtdz/lab4)
