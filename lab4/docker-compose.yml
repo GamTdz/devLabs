@@ -1,0 +1,20 @@
+version: '2.2'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: gamtdz/lab4:compose-django
+    container_name: django
+    ports:
+      - 8000:8000
+  
+  test:
+    build:
+      context: .
+      dockerfile: Dockerfile.monitoring
+    image: gamtdz/lab4:compose-monitoring
+    container_name: monitoring
+    depends_on:
+      - app
+    network_mode: "host"
