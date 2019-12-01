@@ -18,12 +18,12 @@ docker build -t gamtdz/lab4:django .
 docker images
 docker push gamtdz/lab4:django
 ```
-[Посилання на Docker Hub](https://hub.docker.com/repository/docker/gamtdz/lab4/general)
-5. Запустив веб-сайт наступною командою:
+5. [Посилання на Docker Hub](https://hub.docker.com/repository/docker/gamtdz/lab4/general)
+6. Запустив веб-сайт наступною командою:
 ```
 docker run -it --name=django --rm -p 8000:8000 gamtdz/lab4:django
 ```
 ![Docker run](https://github.com/GamTdz/devLabs/blob/master/lab4/img/dockerRun.png "dockerRun")
-6. Створив ще один контейнер з програмою моніторингу нашого веб-сайту за допомогою файлу `Dockerfile.monitoring`.
-7. Виконав білд та запустив одночасно веб-сайт та моніторинг (щоб уникнути проблем з мережею використав ключ `--net=host`).
-8. Закомітив файли.
+7. Створив ще один контейнер з програмою моніторингу нашого веб-сайту за допомогою файлу `Dockerfile.monitoring`.
+8. Виконав білд та запустив одночасно веб-сайт та моніторинг (щоб уникнути проблем з мережею використав ключ `--net=host`).
+9. Закомітив файли.
