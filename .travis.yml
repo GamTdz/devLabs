@@ -31,6 +31,10 @@ jobs:
         - docker images
         - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
         - docker push gamtdz/lab4:django
+        - docker build -f Dockerfile.monitoring -t gamtdz/lab4:monitoring .
+        - docker images
+        - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+        - docker push gamtdz/lab4:monitoring
     - stage: "Build Lab 5."
       name: "Build and run Docker images via make"
       services:
