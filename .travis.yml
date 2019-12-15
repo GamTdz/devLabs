@@ -29,7 +29,8 @@ jobs:
       script:
         - docker build -t gamtdz/lab4:django .
         - docker images
-        - if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin; docker push bobas/gamtdz/lab4:django; else echo "PR skip deploy"; fi
+        - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+        - docker push gamtdz/lab4:django
     - stage: "Build Lab 5."
       name: "Build and run Docker images via make"
       services:
